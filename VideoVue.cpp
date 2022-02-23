@@ -15,7 +15,7 @@ VideoVue::VideoVue(const sf::Vector2f& windowSize) : _video("")
 	_textures[0].loadFromFile("play_pause.png");
 	_textures[1].loadFromFile("full_small_screen.png");
 	_GUIs.push_back(std::unique_ptr<CheckBox> {new CheckBox(_textures[0], { 48, 0, 48, 48 }, { 0.01f * windowSize.x, 0.99f * windowSize.y - 48}, false)});
-	_GUIs.push_back(std::unique_ptr<CheckBox> {new CheckBox(_textures[1], { 0, 0, 48, 48 }, { windowSize.x - 58, 0.99f * windowSize.y - 48 }, false)});
+	_GUIs.push_back(std::unique_ptr<CheckBox> {new CheckBox(_textures[1], { 48, 0, 48, 48 }, { windowSize.x - 58, 0.99f * windowSize.y - 48 }, false)});
 	_GUIs.push_back(std::unique_ptr<ProgressBar> {new ProgressBar(sf::Vector2f(0.01f * windowSize.x, windowSize.y - 75), sf::Vector2f(0.98f * windowSize.x, 5), sf::Color(220, 220, 220), sf::Color(255, 55, 55))});
 }
 

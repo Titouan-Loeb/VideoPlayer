@@ -40,6 +40,7 @@ void ProgressBar::setPosition(const sf::Vector2f &position)
 
 void ProgressBar::setSize(const sf::Vector2f& size)
 {
+	_size = size;
 	_fullBar.setSize(size);
 	_progressBar.setSize({ size.x * _purcent / 100, size.y });
 }
