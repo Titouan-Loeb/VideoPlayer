@@ -1,7 +1,7 @@
 # Video Player
 
 ## How to run
-* After cloning the repository, open the .sln file in Visual Studio and run the project in both Debug and Release configurations (make sure you are in **x64**), it will create the necessary folders for the next step.
+* After cloning the repository, open **the VideoPlayer.sln** file in Visual Studio and run the project in both Debug and Release configurations (make sure you are in **x64**), it will create the necessary folders for the next step.
 * Copy the content of the folder **copyTo-x64-Debug** into the the folder **x64\Debug**.
 * Copy the content of the folder **copyTo-x64-Release** into the the folder **x64\Release**.
 
